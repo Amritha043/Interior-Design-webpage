@@ -9,7 +9,17 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
+    margin: 0;
+  padding: 0;
 }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img, .container {
+    max-width: 100%;
+  }
 #logo{
     width: 180px;
 }
@@ -838,6 +848,11 @@ transform: translatex(50px);
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+      }
+    
     .counter {
         gap: 40px;
     }
